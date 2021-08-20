@@ -1,6 +1,6 @@
 import requests
 urll=input("fuzzing yapılacak site url giriniz: ")
-wordlist=input("wordlist dosyasını giriniz (önerilen common.txt): ")
+wordlist=input("wordlist dosyasını giriniz: ")
 dosya=open(wordlist,"r")
 icerik=dosya.read()
 dosya.close()
@@ -11,5 +11,3 @@ for i in icerik.split("\n"):
     sonuc=requests.get(url=url)
     if "200" in str(sonuc.status_code):
         print("bulunan dizinler; ",i)
-    else:
-        print("bulunamayan dizinler; ",i)
