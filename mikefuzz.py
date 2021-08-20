@@ -1,4 +1,12 @@
 import requests
+#bu yazılım sahibi belirtilecek şekilde değiştirilebilir veya geliştirilebilir sadece, aksi takdirde dava açılır.
+print("""
+
+┌───── •✧✧• ─────┐
+ -Yapımcı Mike adams 
+└───── •✧✧• ─────┘
+ tool v1.0
+""")
 urll=input("fuzzing yapılacak site url giriniz: ")
 wordlist=input("wordlist dosyasını giriniz: ")
 dosya=open(wordlist,"r")
