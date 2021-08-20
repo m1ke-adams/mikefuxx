@@ -1,6 +1,6 @@
 import requests
 urll=input("fuzzing yapılacak site url giriniz: ")
-wordlist=input("wordlist dosyasını giriniz (önerilen dirb.txt): ")
+wordlist=input("wordlist dosyasını giriniz (önerilen common.txt): ")
 dosya=open(wordlist,"r")
 icerik=dosya.read()
 dosya.close()
